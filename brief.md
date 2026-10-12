@@ -41,5 +41,10 @@ Resource: National Telecommunications and Information Administration — The Min
 https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
 
 ## Misconception in My Track
+A common misconception in cybersecurity is that a software vulnerability can only affect a system when attackers directly access its main application. However, vulnerabilities in third-party libraries can also put applications at risk. Log4Shell (CVE-2021-44228) affected certain versions of Apache Log4j 2, and attackers could exploit the vulnerable logging functionality to execute code remotely under the relevant conditions. Developers and security teams should therefore check dependencies, identify vulnerable versions, and apply appropriate updates instead of focusing only on their own application code.
+
+Evidence: Apache Logging Services — Security, section “CVE-2021-44228”
+https://logging.apache.org/security.html
 
 ## Open Question
+How can organizations continuously identify vulnerable third-party software components and respond quickly to newly discovered vulnerabilities without disrupting essential services?
