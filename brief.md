@@ -23,10 +23,22 @@ Resource: OWASP — About the Standard
 https://mas.owasp.org/MASVS/02-Frontispiece/
 
 ## Networking
+Internet routing relies on Border Gateway Protocol (BGP) to exchange route information between autonomous systems. Incorrect or malicious route announcements can redirect traffic away from its intended destination. Resource Public Key Infrastructure (RPKI) supports route origin validation by checking whether the autonomous system announcing an IP prefix is authorized to originate it. This helps reduce certain routing risks, although it does not prevent every type of BGP attack.
+
+Resource: RFC Editor — RFC 6811: BGP Prefix Origin Validation
+https://www.rfc-editor.org/rfc/rfc6811.html
 
 ## Cybersecurity
+Software vulnerabilities can threaten systems when attackers exploit weaknesses before they are fixed. A well-known example is CVE-2021-44228, commonly called Log4Shell, which affected certain versions of Apache Log4j and could allow remote code execution. Organizations should identify affected software components, check whether vulnerable versions are in use, and apply appropriate security updates. Keeping an inventory of dependencies and monitoring official security advisories can help teams respond to vulnerabilities more effectively.
+
+Resource: Apache Logging Services — Security
+https://logging.apache.org/security.html
 
 ## Data
+Data security includes protecting information and understanding the software components that process or store it. A Software Bill of Materials (SBOM) is a formal record of the components used to build a software product and their supply-chain relationships. It can help organizations identify affected components when new vulnerabilities are discovered and manage software risks. However, an SBOM alone does not secure an application; it supports security work by improving visibility into software dependencies.
+
+Resource: National Telecommunications and Information Administration — The Minimum Elements for an SBOM
+https://www.ntia.gov/files/ntia/publications/sbom_minimum_elements_report.pdf
 
 ## Misconception in My Track
 
